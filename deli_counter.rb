@@ -1,6 +1,7 @@
 # Write your code here.
 
 katz_deli = []
+counter = 0
 
 def line(x)
   line_array = []
@@ -13,9 +14,9 @@ def line(x)
     puts "The line is currently: #{line_array.join(" ")}"
   end
 end
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli)
+  counter ++ 
+  puts "Welcome, You are number #{counter} in line."
 end
 def now_serving(array)
   if array.empty?
